@@ -1,15 +1,15 @@
 import React from 'react';
 import {Route,Routes} from "react-router-dom";
-import HomePage from "./pages/homePage";
-import AboutUsPage from "./pages/aboutUsPage";
-import AdminPage from "./pages/adminPage";
-import CartPage from "./pages/cartPage";
-import EditProductPage from "./pages/editProductPage";
-import ProductDetailPage from "./pages/productDetailPage";
-import ProductsPage from "./pages/productsPage";
-import LoginPage from "./pages/loginPage";
-import RegistrationPage from "./pages/registrationPage";
-import NotFoundPage from "./pages/notFoundPage";
+import HomePage from "./pages/HomePage";
+import AboutUsPage from "./pages/AboutUsPage";
+import AdminPage from "./pages/AdminPage";
+import CartPage from "./pages/CartPage";
+import EditProductPage from "./pages/EditProductPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import ProductsPage from "./pages/ProductsPage";
+import LoginPage from "./pages/LoginPage";
+import RegistrationPage from "./pages/RegistrationPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const MainRoutes = () => {
     const PUBLIC_ROUTES = [
