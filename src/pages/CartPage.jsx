@@ -1,9 +1,10 @@
 import React from 'react';
+import Cart from "../components/Cart";
 
 const CartPage = () => {
     return (
-        <div>
-            
+        <div style={{marginTop: '2%'}}>
+            <Cart />
         </div>
     );
 };
