@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useReducer } from "react";
 import {CART} from "../helpers/Consts";
 import {getCountProductsInCart,calcSubPrice,calcTotalPrice} from "../helpers/Functions";
@@ -5,8 +6,9 @@ import {getCountProductsInCart,calcSubPrice,calcTotalPrice} from "../helpers/Fun
 const cartContext = createContext();
 
 export const useCart = () => {
-    return useContext(cartContext);
+  return useContext(cartContext);
 };
+\
 
 const INIT_STATE = {
     cart: JSON.parse(localStorage.getItem("cart")),

@@ -12,8 +12,8 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-import { Link as RouterLink } from "react-router-dom";
+import "../styles/Registration.css";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 function Copyright(props) {
@@ -24,9 +24,9 @@ function Copyright(props) {
       align="center"
       {...props}
     >
-      {"Copyright © "}
+      {"ERNEST © "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        SHEGOL
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -47,7 +47,7 @@ export default function RegistrationPage() {
   // };
 
   const { register, error } = useAuth();
-
+  const navigate = useNavigate();
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   console.log(email, password);
@@ -67,7 +67,8 @@ export default function RegistrationPage() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: "url(https://source.unsplash.com/random)",
+            backgroundImage:
+              "url(https://source.unsplash.com/800x600/?alcohol)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"
@@ -132,8 +133,12 @@ export default function RegistrationPage() {
                 // type="submit"
                 fullWidth
                 variant="contained"
+                className="Reg_btn"
                 sx={{ mt: 3, mb: 2 }}
-                onClick={() => handleRegister(email, password)}
+                onClick={() => {
+                  handleRegister(email, password);
+                  navigate("/login");
+                }}
               >
                 Sign Up
               </Button>
