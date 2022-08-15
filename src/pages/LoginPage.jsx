@@ -12,8 +12,8 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-import { Link as RouterLink } from "react-router-dom";
+import "../styles/Login.css";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 function Copyright(props) {
@@ -24,9 +24,9 @@ function Copyright(props) {
       align="center"
       {...props}
     >
-      {"Copyright © "}
+      {"ERNEST © "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        SHEGOL
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -47,6 +47,7 @@ export default function LoginPage() {
   // };
 
   const { login, error } = useAuth();
+  const navigate = useNavigate();
 
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -66,7 +67,8 @@ export default function LoginPage() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: "url(https://source.unsplash.com/random)",
+            backgroundImage:
+              "url(https://source.unsplash.com/800x600/?alcohol)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"
@@ -90,7 +92,7 @@ export default function LoginPage() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Log in
             </Typography>
             <Box
               component="form"
@@ -128,15 +130,21 @@ export default function LoginPage() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
+
               <Button
                 // type="submit"
                 fullWidth
+                className="Log_btn"
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-                onClick={() => handleLogin(email, password)}
+                onClick={() => {
+                  handleLogin(email, password);
+                  navigate("/");
+                }}
               >
-                Sign In
+                Log In
               </Button>
+
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">

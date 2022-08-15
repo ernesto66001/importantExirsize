@@ -1,15 +1,25 @@
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-
-import HomePage from "./pages/HomePage";
+import AuthContextProvider from "./contexts/AuthContextProvider";
+import ProductContextProvider from "./contexts/ProductContextProvider";
+import MainRoutes from "./MainRoutes";
+import { Box } from "@mui/material";
+import CartContextProvider from "./contexts/CartContextProvider";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HomePage />
-      <Footer />
-    </div>
+    <>
+      <AuthContextProvider>
+        <ProductContextProvider>
+          <CartContextProvider>
+            <Navbar />
+            <Box sx={{ marginLeft: "15vw" }}>
+              <MainRoutes />
+            </Box>
+          </CartContextProvider>
+        </ProductContextProvider>
+      </AuthContextProvider>
+    </>
   );
 }
 
