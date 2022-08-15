@@ -1,11 +1,14 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import CartPage from "./pages/CartPage";
+
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-
+      <HomePage />
+      <Footer />
     </div>
   );
 }

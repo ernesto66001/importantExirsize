@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit:wght@500&display=swap");
+#HomePage {
+  width: 100%;
+}
+.HomePage__mainBlock {
+  margin: 50px auto;
+  display: flex;
+  width: 80%;
+  height: 70vh;
+  box-shadow: 5px 20px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ddf7f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.HomePage__Slider {
+  height: 100% !important;
+  width: 45%;
+}
+.HomePage__Slider_block {
+  border-radius: "5px";
+
+  height: 100% !important;
+}
+.awssld {
+  --loader-bar-color: none !important;
+}
+.awssld__bullets {
+  display: none !important;
+}
+.awssld__wrapper {
+  border-radius: 20px;
+  height: 100% !important;
+}
+.HomePage__Info {
+  width: 40%;
+  height: 90%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.HomePage__Info_NameH1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: -20px;
+  margin-top: 0px;
+  /* color: #045256; */
+  font-family: "Kanit", sans-serif;
+  background-image: url(https://media1.giphy.com/media/2edXGppORRbb2/giphy.gif?cid=ecf05e47td1sw73yhi5ryqnzo94zq88dmxvvjwp1vhb97dqc&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+
+  /* font-family: "Josefin Sans", sans-serif; */
+}
+.HomePage__Info_NameP {
+  font-weight: bold;
+  color: #0b1516;
+  font-family: "Kanit", sans-serif;
+}
+.HomePage__Info_Text {
+  background-color: #045256;
+  color: #ddf7f8;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: 5em;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Josefin Sans", sans-serif;
+}
+.HomePage__Info_Btn {
+  background-color: #ddf7f8;
+  width: 10rem;
+  height: 3rem;
+  border: 2px solid #0b1516;
+  color: #0b1516;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  font-family: "Josefin Sans", sans-serif;
+}
+.HomePage__Info_Btn:hover {
+  background-color: #045256;
+  color: #ddf7f8;
+  transition: 0.5s;
+}
+.HomePage__Line_Left {
+  border-right: 10px double #0b1516;
+  height: 50%;
+  margin: 0 2em 0 2em;
+}
+.HomePage__Line_Right {
+  border-right: 10px double #045256;
+  height: 90%;
+}
