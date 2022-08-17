@@ -67,6 +67,9 @@ const ProductList = () => {
             <Link to='/cart'>
                 <button>CART</button>
             </Link>
+            <Link to='/favPage'>
+                <button>to favorities</button>
+            </Link>
         </Box>
     );
 };
