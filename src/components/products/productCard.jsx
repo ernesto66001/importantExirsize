@@ -10,12 +10,13 @@ import { useNavigate } from "react-router-dom";
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
-
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { IconButton } from "@mui/material";
 import { useCart } from "../../contexts/CartContextProvider";
+import {useFav} from "../../contexts/FavContextrovider";
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } }
@@ -24,6 +25,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } }
  function ProductCard({ item }) {
 const {deleteProduct,getProductDetails}=useProducts()
      const { addProductToCart, checkProductInCart } = useCart();
+     const { addProductToFav, checkProductInFav } = useFav();
     const navigate = useNavigate();
 
     return (
@@ -63,6 +65,11 @@ const {deleteProduct,getProductDetails}=useProducts()
                 <IconButton onClick={() => addProductToCart(item)}>
                     <ShoppingCartRoundedIcon
                         color={checkProductInCart(item.id) ? "secondary" : ""}
+                    />
+                </IconButton>
+                <IconButton onClick={() => addProductToFav(item)}>
+                    <BookmarkIcon
+                        color={checkProductInFav(item.id) ? "secondary" : ""}
                     />
                 </IconButton>
                 <Checkbox  sx={{color:'red'}} {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite sx={{color:'red'}}/>} />
