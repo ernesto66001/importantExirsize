@@ -1,0 +1,12 @@
+.Pay {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.Pay__h2 {
+  position: absolute;
+  font-size: 7rem;
+  color: white;
+  text-align: center;
+}

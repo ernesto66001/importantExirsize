@@ -1,10 +1,38 @@
 .Log_btn {
-  background-color: #045256 !important ;
+  background-color: #804030 !important ;
 }
 .Log_btn:hover {
   background-color: white !important;
   color: black !important;
 }
 .css-1999axt-MuiAvatar-root {
-  background-color: #0b1516 !important;
+  background-color: #804030 !important;
+}
+.css-1y8ugea {
+  margin-top: 120px !important;
+}
+.css-gadse4-MuiPaper-root-MuiGrid-root {
+  background: rgb(0, 0, 0) !important;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(48, 41, 41, 1) 40%
+  ) !important;
+}
+
+.css-ag7rrr-MuiTypography-root {
+  color: white !important;
+  font-weight: bold !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  color: white !important;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  background-color: rgb(203, 203, 203) !important;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white !important;
+  font-size: 1.3rem;
+  font-weight: bold;
 }

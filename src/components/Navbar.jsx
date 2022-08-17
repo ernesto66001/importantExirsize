@@ -14,13 +14,13 @@ const Navbar = () => {
         <Link className="header__nav_way header__nav_wayHover1" to="/">
           Home
         </Link>
-        <Link className="header__nav_way header__nav_wayHover2" to="/">
+        <Link className="header__nav_way header__nav_wayHover2" to="/products">
           Products
         </Link>
-        <Link className="header__nav_way header__nav_wayHover3" to="/">
+        <Link className="header__nav_way header__nav_wayHover3" to="/admin">
           Admin
         </Link>
-        <Link className="header__nav_way header__nav_wayHover4" to="/">
+        <Link className="header__nav_way header__nav_wayHover4" to="/about">
           AboutUs
         </Link>
       </div>

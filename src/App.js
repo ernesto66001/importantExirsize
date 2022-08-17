@@ -2,11 +2,12 @@ import Navbar from "./components/Navbar";
 import AuthContextProvider from "./contexts/AuthContextProvider";
 import ProductContextProvider from "./contexts/ProductContextProvider";
 import MainRoutes from "./MainRoutes";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 import { Box } from "@mui/material";
 import CartContextProvider from "./contexts/CartContextProvider";
 import { BrowserRouter } from "react-router-dom";
+import CartBtn from "./components/CartBtn";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             <Box sx={{ marginLeft: "15vw" }}>
               <MainRoutes />
             </Box>
-            <Footer sx={{marginTop:'30px'}}/>
+            <CartBtn />
+            <Footer />
           </CartContextProvider>
         </ProductContextProvider>
       </AuthContextProvider>

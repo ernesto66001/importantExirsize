@@ -1,0 +1,41 @@
+.Order {
+  width: 100vw;
+  height: 100vh;
+}
+.OrderBlock {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  background-image: url(../image/LIst2.jpeg);
+  height: 100%;
+  position: relative;
+}
+.Order__Input {
+  color: black;
+}
+.Order__Input_h5 {
+  color: black;
+  font-size: 1rem;
+}
+.Order__Input_First {
+  width: 100%;
+  height: 2rem;
+  color: black;
+  border-radius: 10px;
+  border: none;
+}
+.Order__btn {
+  width: 15rem;
+  height: 3rem;
+  position: absolute;
+  top: 70%;
+  left: 33%;
+  background: none;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.Order__btn:hover {
+  background-color: black;
+  color: white;
+}
