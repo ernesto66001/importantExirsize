@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="header">
       <Link className="header__nav_logo" to="/">
@@ -24,10 +25,15 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="header__reg">
-        <Link to="/">
-          <button className="header__reg_btn header__reg_log">Log In</button>
-        </Link>
-        <Link to="/">
+        {/* <Link to="/login"> */}
+        <button
+          className="header__reg_btn header__reg_log"
+          onClick={() => navigate("/login")}
+        >
+          Log In
+        </button>
+        {/* </Link> */}
+        <Link to="/register">
           <button className="header__reg_btn header__reg_sign">Sign Up</button>
         </Link>
       </div>
