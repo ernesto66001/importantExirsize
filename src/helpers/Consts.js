@@ -7,5 +7,9 @@ export const CART = {
     GET_CART: "GET_CART",
     GET_CART_LENGTH: "GET_CART_LENGTH",
 };
+export const FAV = {
+    GET_FAV: "GET_FAV",
+    GET_FAV_LENGTH: "GET_FAV_LENGTH",
+};
 
 export const JSON_API_PRODUCTS = "http://localhost:8000/products";

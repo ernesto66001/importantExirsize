@@ -10,6 +10,7 @@ import ProductsPage from "./pages/ProductsPage";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import FavoritesPage from "./pages/FavoritesPage";
 
 const MainRoutes = () => {
     const PUBLIC_ROUTES = [
@@ -62,6 +63,11 @@ const MainRoutes = () => {
             link: "*",
             element: <NotFoundPage />,
             id: 10,
+        },
+        {
+            link: "/favPage",
+            element: <FavoritesPage />,
+            id: 11,
         },
     ];
     return (
