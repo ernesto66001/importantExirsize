@@ -11,6 +11,8 @@ import { useCart } from "../contexts/CartContextProvider";
 import { Button, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import DeleteIcon from "@mui/icons-material/Delete";
+import "../components/styleComp/Cart.css";
+import { Link } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -117,7 +119,9 @@ export default function Cart() {
       <Box sx={{ m: 5 }}>
         <Typography variant="h6" component="div">
           Total price: {cart?.totalPrice}
-          <Button onClick={cartCleaner}>BUY NOW</Button>
+          <Link to="/order">
+            <Button onClick={cartCleaner}>BUY NOW</Button>
+          </Link>
         </Typography>
       </Box>
     </TableContainer>

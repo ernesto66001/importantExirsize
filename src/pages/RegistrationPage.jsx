@@ -37,15 +37,6 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function RegistrationPage() {
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const data = new FormData(event.currentTarget);
-  //   console.log({
-  //     email: data.get("email"),
-  //     password: data.get("password"),
-  //   });
-  // };
-
   const { register, error } = useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = React.useState("");

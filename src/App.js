@@ -6,22 +6,30 @@ import Footer from "./components/Footer";
 
 import { Box } from "@mui/material";
 import CartContextProvider from "./contexts/CartContextProvider";
+
+import FavContextProvider from "./contexts/FavContextrovider";
+
 import { BrowserRouter } from "react-router-dom";
+
 import CartBtn from "./components/CartBtn";
+import FavBtn from "./components/FavBtn";
 
 function App() {
   return (
     <>
       <AuthContextProvider>
         <ProductContextProvider>
-          <CartContextProvider>
-            <Navbar />
-            <Box sx={{ marginLeft: "15vw" }}>
-              <MainRoutes />
-            </Box>
-            <CartBtn />
-            <Footer />
-          </CartContextProvider>
+          <FavContextProvider>
+            <CartContextProvider>
+              <Navbar />
+              <Box sx={{ marginLeft: "15vw" }}>
+                <MainRoutes />
+              </Box>
+              <FavBtn />
+              <CartBtn />
+              <Footer />
+            </CartContextProvider>
+          </FavContextProvider>
         </ProductContextProvider>
       </AuthContextProvider>
     </>

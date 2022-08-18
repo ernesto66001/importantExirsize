@@ -12,6 +12,7 @@ import RegistrationPage from "./pages/RegistrationPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import OrderPage from "./pages/OrderPage";
 import PayPage from "./pages/PayPage";
+import FavoritesPage from "./pages/FavoritesPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -74,6 +75,11 @@ const MainRoutes = () => {
       link: "/pay",
       element: <PayPage />,
       id: 12,
+    },
+    {
+      link: "/favPage",
+      element: <FavoritesPage />,
+      id: 13,
     },
   ];
   return (

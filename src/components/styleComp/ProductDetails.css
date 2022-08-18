@@ -69,3 +69,8 @@
 .ProductDetails__Info_Btn:hover {
   background-color: rgb(41, 35, 35);
 }
+@media all and (max-width: 425px) {
+  .ProductDetails__Info_NameH1 {
+    font-size: 2rem;
+  }
+}

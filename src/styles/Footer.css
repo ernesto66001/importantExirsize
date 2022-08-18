@@ -33,3 +33,12 @@
   position: absolute;
   top: 50%;
 }
+@media all and (max-width: 425px) {
+  .footer__text_h3 {
+    display: none;
+  }
+  .footer__h4 {
+    left: 15%;
+    top: 10%;
+  }
+}

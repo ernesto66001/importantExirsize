@@ -39,3 +39,8 @@
   background-color: black;
   color: white;
 }
+@media all and (max-width: 425px) {
+  .Order__btn {
+    left: 10%;
+  }
+}

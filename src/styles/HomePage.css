@@ -131,3 +131,45 @@
   background-color: #804030;
   border: 3px solid #804030;
 }
+
+@media all and (max-width: 1024px) {
+  .HomePage__header_h1 {
+    font-size: 5rem;
+  }
+  .HomePage3__info_h3 {
+    top: 2%;
+  }
+}
+@media all and (max-width: 768px) {
+  .HomePage3__info_p {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 425px) {
+  .HomePage__header_h1 {
+    font-size: 3rem;
+    left: 10%;
+  }
+  .HomePage__header_p {
+    top: 40%;
+  }
+  .HomePage2__text_h2 {
+    font-size: 2.5rem;
+    top: 1%;
+    left: 10%;
+  }
+  .HomePage2__text_p {
+    font-size: 1rem;
+    width: 80%;
+    left: 10%;
+  }
+  .HomePage3__info_h3 {
+    font-size: 2rem;
+  }
+  .HomePage3__info_p {
+    display: none;
+  }
+  .HomePage3__info_btn {
+    left: 10%;
+  }
+}

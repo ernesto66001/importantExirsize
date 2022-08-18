@@ -10,3 +10,11 @@
   color: white;
   text-align: center;
 }
+@media all and (max-width: 425px) {
+  .Pay__h2 {
+    font-size: 3rem;
+  }
+  .Pay {
+    height: 50vh;
+  }
+}
