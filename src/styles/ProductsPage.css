@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300&display=swap");
+.ProductsPage {
+  background-image: url(../image/TreesOrig.jpeg);
+  padding-top: 50px;
+}
+.ProductsPage__box {
+  background: rgb(0, 0, 0) !important;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(48, 41, 41, 0.4) 40%
+  ) !important;
+}
+
+.css-wjh20t-MuiPagination-ul li {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+.css-spgh70-MuiPagination-root {
+  margin-left: 32vw !important;
+}
+.css-1c4iwri-MuiPaper-root {
+  background-image: url(../image/LIst2.jpeg) !important;
+  background-size: cover !important;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1) !important;
+}
+.css-1e9zm9k-MuiFormControl-root-MuiTextField-root {
+  background-color: white !important;
+}
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  color: black !important;
+  font-weight: bold;
+}
+.css-1s11ea-MuiFormLabel-root {
+  color: black !important;
+  font-weight: bold !important;
+  font-family: "Bebas Neue", cursive !important;
+  font-size: 2rem;
+}

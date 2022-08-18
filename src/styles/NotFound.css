@@ -1,0 +1,14 @@
+.NotFound {
+  width: 100vw;
+  height: 100vh;
+}
+.NotFound__h2 {
+  font-size: 15rem;
+  color: white;
+  margin: 0 auto;
+}
+@media all and (max-width: 425px) {
+  .NotFound__h2 {
+    font-size: 4rem;
+  }
+}

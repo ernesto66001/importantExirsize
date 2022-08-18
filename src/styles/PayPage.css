@@ -1,0 +1,20 @@
+.Pay {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.Pay__h2 {
+  position: absolute;
+  font-size: 7rem;
+  color: white;
+  text-align: center;
+}
+@media all and (max-width: 425px) {
+  .Pay__h2 {
+    font-size: 3rem;
+  }
+  .Pay {
+    height: 50vh;
+  }
+}

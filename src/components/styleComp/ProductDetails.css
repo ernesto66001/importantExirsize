@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300&display=swap");
+.ProductDetails {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.ProductDetails__mainBlock {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-image: url(../imageComp/TreesOrig2.jpeg);
+  border-radius: 20px;
+}
+
+.ProductDetails__img {
+  height: 100%;
+  width: 40vw;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.ProductDetails__Info {
+  width: 50%;
+}
+.ProductDetails__Info_Name {
+  color: white;
+}
+.ProductDetails__Info_NameH1 {
+  font-size: 5rem;
+  margin-bottom: -20px;
+  margin-left: 5%;
+  font-family: "Bebas Neue", cursive !important;
+}
+.ProductDetails__Info_NameP {
+  font-size: 2rem;
+  margin-left: 5%;
+  font-family: "Teko", sans-serif !important;
+}
+.ProductDetails__Info_NameP2 {
+  font-size: 2rem;
+  font-family: "Teko", sans-serif !important;
+  margin-left: 10%;
+}
+.ProductDetails__Info_Text {
+  background-color: rgb(41, 32, 32);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1) !important;
+  margin-left: 20%;
+  color: white;
+}
+.ProductDetails__Info_Btn {
+  width: 12rem;
+  height: 4rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  background: none;
+  border-radius: 20px;
+  border: 2px solid black;
+  color: white;
+  font-family: "Bebas Neue", cursive !important;
+  font-size: 2rem;
+}
+.ProductDetails__Info_Btn:hover {
+  background-color: rgb(41, 35, 35);
+}
+@media all and (max-width: 425px) {
+  .ProductDetails__Info_NameH1 {
+    font-size: 2rem;
+  }
+}

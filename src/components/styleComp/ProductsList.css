@@ -1,0 +1,9 @@
+.ProductsList__box {
+  display: block !important;
+}
+
+@media all and (max-width: 425px) {
+  .css-k008qs {
+    flex-direction: column !important;
+  }
+}
